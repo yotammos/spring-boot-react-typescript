@@ -1,7 +1,7 @@
 {
     "plugins": [
-        "prettier",
-        "@typescript-eslint"
+        "@typescript-eslint",
+        "prettier"
     ],
     "extends": [
         "airbnb-typescript",
@@ -20,6 +20,10 @@
         }
     },
     "rules": {
+        "semi": [
+            2,
+            "never"
+        ],
         "object-curly-spacing": [
             "warn",
             "always"
@@ -30,6 +34,10 @@
                 "vars": "all",
                 "args": "none"
             }
+        ],
+        "@typescript-eslint/semi": [
+            2,
+            "never"
         ],
         "@typescript-eslint/no-unused-vars": [
             "warn",
